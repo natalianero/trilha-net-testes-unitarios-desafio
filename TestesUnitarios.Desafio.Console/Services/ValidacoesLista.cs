@@ -20,6 +20,12 @@ namespace TestesUnitarios.Desafio.Console.Services
             return listaMultiplicada;
         }
 
+        public List<int> MultiplicarElementosPorDois(List<int> lista)
+        {
+            var listaMultiplicada = lista.Select(x => x * 2).ToList();
+            return listaMultiplicada;
+        }
+
         public int RetornarMaiorNumeroLista(List<int> lista)
         {
             return lista.Max();
